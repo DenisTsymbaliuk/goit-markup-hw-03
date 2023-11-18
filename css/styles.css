@@ -9,28 +9,30 @@ p {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .container {
   width: 1158px;
-  max-width: 1440px;
-  padding: 0 15px;
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body {
-  font-family: Roboto, sans-serif;
-  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   color: #434455;
-}
-
-a {
-  text-decoration: none;
+  background-color: #fff;
+  letter-spacing: 0.02em;
 }
 
 li {
@@ -49,19 +51,15 @@ li {
   overflow: hidden;
 }
 .header {
-  display: flex;
   border-bottom: 1px solid #e7e9fc;
 }
 .head-cont {
   display: flex;
+  justify-content: space-between;
 }
 .header-menu {
   display: flex;
-  gap: 40px;
   align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 .contacts {
   display: flex;
@@ -71,12 +69,8 @@ li {
   margin: auto;
 }
 .contacts-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 40px;
-  justify-content: flex-end;
 }
 .link-contacts-menu {
   display: flex;
@@ -94,15 +88,13 @@ li {
 /*Logo Style*/
 .logo {
   color: #4d5ae5;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding: 24px 0;
 }
 
 .logo-link {
@@ -129,9 +121,6 @@ li {
 .list-nav {
   display: flex;
   gap: 40px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .link-nav {
   color: #2e2f42;
@@ -289,6 +278,13 @@ li {
 }
 .sectoin-title-team {
   margin-bottom: 72px;
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .title-our-team {
   display: flex;
@@ -321,7 +317,7 @@ li {
 .title-portfolio {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
   row-gap: 48px;
 }
 .list-portfolio {
@@ -331,7 +327,6 @@ li {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 /*Footer*/
@@ -339,9 +334,13 @@ li {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.end-cont {
+  display: flex;
+  flex-direction: column;
+}
 .logo-cont {
-  display: inline-block;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .end-logo {
   color: #f4f4fd;
@@ -352,7 +351,6 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px;
 }
 
 .end-text {
