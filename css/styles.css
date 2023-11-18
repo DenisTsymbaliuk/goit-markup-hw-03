@@ -70,7 +70,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  display: inline-block;
 }
 
 .logo-link {
@@ -302,10 +301,6 @@ body {
 .end {
   background-color: #2e2f42;
   padding: 100px 0;
-}
-.end-cont {
-  display: flex;
-  flex-direction: column;
 }
 .logo-cont {
   margin-bottom: 16px;
